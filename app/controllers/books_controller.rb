@@ -16,7 +16,7 @@ class BooksController < ApplicationController
   def index
      @books = Book.all
      @book = Book.new
-     #@books = Book.new(book_params)
+     #redirect_to books_path(book.id)
   end
 
   def show
